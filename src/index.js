@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     const exerciseClickListener = () => {
+        // listens for aside clicks
         document.addEventListener('click', e => {
             if (e.target.matches('div[data-exercise-id]')) {
                 const content = document.querySelector('#content')
@@ -202,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     const userPageListener = () => {
+        // to edit user details
         document.addEventListener("click", e => {
             let userId = document.querySelector('main').dataset.userId
             if(e.target.matches("#editUser")){

@@ -16,20 +16,20 @@ class User {
         `
         node.append(userDiv)
     }
-    // static create(node){
-    //     const form = document.createElement("form")
-    //     form.setAttribute("id", "newUser")
-    //     form.innerHTML =`
-    //     <h2>New User</h2>
-    //     <label>Name</label>
-    //     <input name = "name">
-    //     <label>Weight</label> 
-    //     <input name ="weight">
-    //     <button type="submit">submit</button>
-    //     `
-    //     node.append(form)
+    static create(node){
+        const form = document.createElement("form")
+        form.setAttribute("id", "newUser")
+        form.innerHTML =`
+        <h2>New User</h2>
+        <label>Name</label>
+        <input name = "name">
+        <label>Weight</label> 
+        <input name ="weight">
+        <button type="submit">submit</button>
+        `
+        node.append(form)
 
-    // }
+    }
 
     // would like to rename this
     static renderUserView(currentUser) {
