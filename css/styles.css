@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  /* font-family: 'Courier New', Courier, monospace; */
+  background: #303030;
+  font-family: 'ui-monospace';
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 1px solid black;
+  height: 7.5vh;
+  background: #303030;
+  display: flex;
+}
+h1 {
+  color: #f0f0f0;
+  width: 55vw;
+  align-self: center;
+}
+h1:hover {
+  cursor: pointer;
+  /* color: #f0d0d0; */
+}
+
+#userNav {
+  width: 45vw;
+  display: flex;
+  /* margin-right: 5vw; */
+}
+#userNav > * {
+  transition: .5s;
+  font-size: 1em;
+  width: 15vw;
+}
+
+.userIcon {
+  color: #f0f0f0;
+  align-self: center;
+  text-align: center;
+  padding: 2.35vh 0;
+}
+.logoutBtn {
+  justify-self: right;
+}
+.statsButton {
+  color: #f0f0f0;
+  align-self: center;
+  padding: 2.35vh 0;
+}
+
+h1, aside, .content {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+  margin: 5vh 5vw;
+  display: flex;
+  column-gap: 5vw;
+  
+}
+
+.centered-form-div {
+  width: 60vw;
+  margin: 15vw 15vw;
+  border: 1px solid #ff0000;
+  padding: 7.5vh 7.5vw;
+}
+
+aside {
+  border: 1px solid #ff0000;
+  width: 25vw;
+  padding: 2.5vh 2.5vw;
+  border-radius: 2px;
+}
+
+.aside-header {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.aside-header h2 {
+  width: 100%;
+}
+
+.aside-tab {
+  width: 50%;
+  font-size: .8em;
+  color: #909090;
+  margin-top: 1.5%;
+}
+
+.selected-tab {
+  font-size: .9em;
+  color: #ff0000;
+}
+.aside-box:hover .asideExercise, .aside-box:hover{
+  cursor: pointer;
+  background-color: #606060;
+}
+.aside-box{
+  border: 1px solid #303030;
+  border: 1px solid #909090;
+  display: flex;
+  margin: 2vh;
+  padding: 5px;
+  /* -webkit-box-shadow: .5px .5px 5px 6px #ccc;
+  -moz-box-shadow: .5px .5px 5px 6px #ccc;
+  box-shadow: 0.5px 0.5px 3px 1px #888; */
+  border-radius: 2px;
+}
+.exercise-box {
+  border: 1px solid #909090;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 2vh 2vw;
+  padding: 5px;
+}
+.content-exercise {
+  justify-self: center;
+  align-self: center;
+}
+#newDay {
+  display: grid;
+  grid-column: 1 / span 2;
+  row-gap: 2.5vh;
+  margin: 2.5vh;
+}
+
+#newDay label {
+  justify-self: right;
+  align-self: center;
+}
+
+#newDay input {
+  width: 50%;
+  justify-self: center;
+}
+#newDay button {
+  margin: 1.25vh 0 0;
+}
+
+.asideExercise {
+  width: 80%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+}
+#remove-routine {
+  width: 20%;
+  padding: 5px;
+}
+.content {
+  border: 1px solid red;
+  width: 60vw;
+  padding: 2.5vh 2.5vw;
+  border-radius: 2px;
+}
+
+button {
+  padding: 1vh 1vw;
+  transition: .5s;
+  border: none;
+  border-radius: 1px;
+  font-size: 1em;
+}
+
+#addRoutine, .addEx, #login button {
+  border: 1px solid #606060;
+
+}
+
+.centered-form-div h2, .centered-form-div p {
+  text-align: center;
+}
+
+button:hover, .userIcon:hover, .fa-trash-alt:hover {
+cursor: pointer;
+ background-color: #d804049a;
+}
+
+.addEx {
+  margin: 2vh 2vw;
+  width: calc(100% - 4vw);
+}
+
+input{
+  border: none;
+  background-color: #606060;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 5px 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #606060 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  text-align: center;
+}
+
+.centerText {
+  text-align: center;
+}
+
+h2 {
+  margin: 1vh 0;
+}
+
+#login label , #editUser label, #newUser label {
+  margin-top: 2.5vh;
+  display: block;
+  text-align: center;
+}
+
+#login input, #login button, #editUser input, #editUser button, #newUser input, #newUser button {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: 2.5vw 25%;
+}
+#editUser {
+  width: 100%;
+}
