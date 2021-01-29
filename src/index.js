@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     // const formDiv = document.querySelector('.centered-form-div')
 
     const navClickListener = () => {
+        // header event listener
         let header = document.querySelector('header');
         header.addEventListener('click', e => {
             if (e.target.matches('h1')) {
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     const createUserEvent = () => {
+        // listens for sign up button click
         const formDiv = document.querySelector('.centered-form-div')
         document.addEventListener('click', (e) => {
             const target = e.target
@@ -44,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     const submitListener = () => {
+        // listens for user login submission
         document.addEventListener('submit', (e) => {
             e.preventDefault()
             const target = e.target
@@ -274,6 +277,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     const contentDivListener = () => {
+        // listening to add an exercise
+        // console.log("contentDivListener is Running")
         document.addEventListener('click', (e) => {
             const target = e.target
             if (target.matches(".addEx")) {

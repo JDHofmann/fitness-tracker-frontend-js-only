@@ -33,9 +33,11 @@ class User {
 
     // would like to rename this
     static renderUserView(currentUser) {
+        // console.log("renderUserView is running", currentUser)
         Render.renderAsideAndContentDiv()
         const newUser = new User(currentUser)
-            newUser.render(content)
+        console.log(newUser)
+        newUser.render(content)
     }
 
 
